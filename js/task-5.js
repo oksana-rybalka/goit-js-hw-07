@@ -3,3 +3,5 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
+const btn = document.guerySelector('.change-color');
+btn.addEventListener('clik',handleClick())
