@@ -12,3 +12,41 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+
+/* Task-1 */
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  width: 440px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.categories {
+
+}
+
+
+/* Task-2 */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  width: 1440px;
+  height: 848px;
+  justify-content: center;
+  list-style: none;
+  padding: 100px 156px;
+  margin: 0;
+}
+.gallery li {
+width: calc(100% -24px * 2) / 3;
+box-sizing:border-box;
+}
+.gallery img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; 
+}
