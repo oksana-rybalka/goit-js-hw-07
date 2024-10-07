@@ -126,6 +126,9 @@ button {
     color: #fff;
     font-family: "Montserrat", sans-serif;
 }
+button:hover {
+  background:lawngreen ;
+}
 label {
   font-weight: 400;
     font-size: 16px;
@@ -138,5 +141,68 @@ label {
 /* Task-5 */
 
 .widget {
-  padding: 100px  ;
+  padding: 100px 88px ;
 }
+.widget-text {
+  font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+button.change-color {
+  border-radius: 8px;
+    padding: 8px 16px;
+    width: 148px;
+    height: 40px;
+}
+
+/* Task-6 */
+.controls {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  background: #f6f6fe;
+  border-radius: 8px;
+    padding: 32px;
+    width: 486px;
+    height: 104px;
+}
+input[number] {
+  border: 1px solid #808080;
+    border-radius: 8px;
+    width: 150px;
+    height: 40px;
+      font-weight: 500;
+      font-size: 16px;
+      letter-spacing: 0.04em;
+      color: #fff;
+}
+button.btn-create {
+border-radius: 8px;
+  padding: 8px 16px;
+  width: 120px;
+  height: 40px;
+  margin-top: 0;
+}
+button.btn-create:hover{
+  background: #2e2f42;
+}
+button.btn-destroy {
+  border-radius: 8px;
+    padding: 8px 16px;
+    width: 120px;
+    height: 40px;
+    background: #ff4e4e;
+    margin-top: 0;
+}
+button.btn-destroy:hover {
+  background: #850e0e;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap:  44px;
+}
+
