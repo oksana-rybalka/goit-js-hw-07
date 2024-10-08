@@ -18,21 +18,22 @@ btnCreate.addEventListener("click", () => {
 
 btnDestroy.addEventListener("click", () => {
   input.value = "";
-  cleanClick()
+  destroyBoxes()
 });
 
 function createBoxes(amount) {
+  const fragment = document.createDocumentFragment();
   for (let i = 0; i < amount; i++) {
     const box = document.createElement("div");
     box.style.width = `${sizes}px`;
     box.style.height = `${sizes}px`;
     box.style.backgroundColor = getRandomHexColor();
-    boxes.append(box);
+    fragment.appendChild(box);
     sizes += 10;
   }
-
+  boxes.append(fragment);
 }
-function cleanClick() {
+function destroyBoxes() {
   boxes.innerHTML = "";
   sizes = 30;
 }
