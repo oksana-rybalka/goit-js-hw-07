@@ -14,11 +14,14 @@ btnCreate.addEventListener("click", () => {
     return;
   }
   createBoxes(input.value);
+  input.value = "";
+  sizes = 30
 });
 
 btnDestroy.addEventListener("click", () => {
   input.value = "";
-  destroyBoxes()
+  boxes.innerHTML = "";
+  sizes = 30;
 });
 
 function createBoxes(amount) {
@@ -30,10 +33,10 @@ function createBoxes(amount) {
     box.style.backgroundColor = getRandomHexColor();
     fragment.appendChild(box);
     sizes += 10;
+    boxes.innerHTML = "";
   }
   boxes.append(fragment);
+
 }
-function destroyBoxes() {
-  boxes.innerHTML = "";
-  sizes = 30;
-}
+   
+
